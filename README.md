@@ -5,6 +5,9 @@ __Proposito__: Una plataforma que busca combatir la desinformación para las pro
 
 __Tecnologías utilizadas__: React, Vite, React Router, etc.
 
+### Deployed:
+Netlify App
+
 ## Fuentes de Información
 [El Comercio](https://elcomercio.pe/politica/elecciones/elecciones-2026-mas-de-20-candidatos-a-la-presidencia-y-vicepresidencias-enfrentan-expedientes-por-falsedad-u-omisiones-en-sus-hojas-de-vida-tlcnota-noticia/)
 
