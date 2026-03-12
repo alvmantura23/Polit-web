@@ -1,59 +1,48 @@
-function Nav() {
-  return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
-        <a className="navbar-brand" href="#">Navbar</a>
+import Button from 'react-bootstrap/Button';
+import Container from 'react-bootstrap/Container';
+import Form from 'react-bootstrap/Form';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import { NavDropdown } from 'react-bootstrap';
 
-    <button
-        className="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        >
-        <span className="navbar-toggler-icon"></span>
-    </button>
+function NavScroll() {
+    return (
+        <Navbar expand = "lg" className="bg-body-tertiary">
+            <Container fluid>
+                <Navbar.Brand href="#">PolitWeb</Navbar.Brand>
+                <Navbar.Toggle aria-controls="navbarScroll" />
+                <Navbar.Collapse id="navbarScroll">
+                    <Nav
+                        className="me-auto my-2 my-lg-0"
+                        style={{ maxHeight: '100px' }}
+                    >
+                        <Nav.Link href="#home">Home</Nav.Link>
+                        <Nav.Link href="#link">Political Organizations</Nav.Link>
+                        <Nav.Link href="#link">Surveys</Nav.Link>
+                        <Nav.Link href="#link">How to vote?</Nav.Link>
+                        {/*We can add more buttons */}
 
-    <div className="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul className="navbar-nav mr-auto">
-
-            <li className="nav-item active">
-                <a className="nav-link" href="#">Home</a>
-                <span className="sr-only">(current)</span>
-            </li>
-
-            <li className="nav-item">
-                <a className="nav-link" href="#">Link</a>
-            </li>
-            <li className="nav-item dropdown">
-                <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
-                    Dropdown
-                </a>
-                <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a className="dropdown-item" href="#">Action</a>
-                    <a className="dropdown-item" href="#">Another action</a>
-                    <div className="dropdown-divider"></div>
-                    <a className="dropdown-item" href="#">Something else here</a>
-                </div>
-            </li>
-            <li className="nav-item">
-                <a className="nav-link" href="#">Contact</a>
-            </li>
-        </ul>
-
-        <form className="form-inline my-2 my-lg-0">
-            <input
-            className="form-control mr-sm-2"
-            type="search"
-            placeholder="Search"
-            />
-            <button className="btn btn-outline-success" type="submit">
-            Search
-            </button>
-        </form>
-
-        </div>
-    </nav>
-  );
+                        <NavDropdown title="Dropdown" id="navbarScrollingDropdown">
+                            <NavDropdown.Item href="#action1">Action</NavDropdown.Item>
+                            <NavDropdown.Item href="#action2">Another action</NavDropdown.Item>
+                            <NavDropdown.Divider />
+                            <NavDropdown.Item href="#action3">Something else</NavDropdown.Item>
+                        </NavDropdown>
+                        <Nav.Link href="#contact">Contact</Nav.Link>
+                    </Nav>
+                    <Form className="d-flex">
+                        <Form.Control
+                            type="search"
+                            placeholder="Search"
+                            className="me-2"
+                            aria-label="Search"
+                        />
+                        <Button variant="outline-success">Search</Button>
+                    </Form>
+                </Navbar.Collapse>
+            </Container>
+        </Navbar>
+    );
 }
 
-export default Nav;
-
+export default NavScroll;

@@ -5,6 +5,10 @@ __Proposito__: Una plataforma que busca combatir la desinformación para las pro
 
 __Tecnologías utilizadas__: React, Vite, React Router, etc.
 
+### Nav:
+Code take from Bootstrap Nav
+Note: Is necessary to install react-bootstrap : npm install react-bootstrap bootstrap 
+
 ### Deployed:
 Netlify App
 
