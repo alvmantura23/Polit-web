@@ -1,7 +1,7 @@
 ## Datos del Proyecto:
  __Nombre__: "Polit-web"
 
-__Proposito__: Una plataforma que busca combatir la desinformación para las proximas elecciones peruanas del 2026
+__Proposito__: Una plataforma que busca informar acerca de los partidos politicos y sus representantes 
 
 __Tecnologías utilizadas__: React, Vite, React Router, etc.
 
